@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+}
+
+/*HEADER*/
+.header{
+    background-color: rgba(255, 192, 203, 0.523);
+    width: 100vw;
+}
+
+.logo{
+    width: 20%;
+    border-radius: 5%;
+}
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgba(157, 0, 255, 0.751);
+    font-style: italic;
+}
+
+.enlacesHeader{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.header ul {
+    list-style: none;
+    background-color: antiquewhite;
+}
+/*/HEADER*/
+
+
+/*MAIN*/
+.main{
+    background-color: rgba(137, 43, 226, 0.259);
+}
+
+.contenedorPersona{
+    width: 100vw;
+}
+
+.contenedorPersona p{
+    color: blueviolet;
+    background-color: rgba(215, 174, 253, 0.812);
+}
+
+.imgPersona{
+    width: 20%;
+}
+
+h3{
+    color: blueviolet;
+}
+/*/MAIN*/
+
+
+/*GALERIA*/
+.contenedorGaleria{
+    width: 30vw;
+    background-color: rgba(137, 43, 226, 0.303);
+}
+
+.contenedorGaleria img{
+    width: 25%;
+}
+/*/GALERIA*/
+
+
+/*INSUMOS*/
+.contenedorInsumos{
+    width: 20vw;
+    background-color: rgba(137, 43, 226, 0.44);
+}
+
+.nombreInsumo{
+    text-decoration: underline;
+    color: blanchedalmond;
+    font-weight: bolder;
+}
+
+.imgInsumos{
+    width: 90%;
+}
+
+.botonCompra{
+    width: 30%;
+}
+/*/INSUMOS*/
+
+
+/*SERVICIOS*/
+.contenedorServicios{
+    width: 90vw;
+    background-color: rgba(137, 43, 226, 0.314);
+}
+
+.imgServicios{
+    width: 40%;
+}
+/*/SERVICIOS*/
+
+
+
+/*FOOTER*/
+.footer{
+    background-color: antiquewhite;
+    height: 10vh;
+}
+
+.enlacesFooter{
+    height: 50px;
+}
+/*/FOOTER*/

@@ -190,48 +190,36 @@ h3{
     height: 100%;
 
 }
-
 .contenedorInsumos{
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    border-radius: 20px;
-    padding: 30px;
-    width: 100%;
-    height: 30%;
-    background-color: rgba(255, 255, 255, 0.705);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
-.insumo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
+.contenedorInsumos .insumo{
     background-color: rgba(255, 255, 255, 0.705);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
-
-.nombreInsumo{
-    text-decoration: underline;
-    color: blanchedalmond;
-    font-weight: bolder;
+    height: 40vh;
+    margin: 20px;
+    text-align: center;
 }
 
 .imgInsumos{
-    height: 20%;
+    height: 50%;
+    width: auto;
+    justify-content: center;
+}
+
+.imgInsumos img{
+    height: 100%;
     width: auto;
 }
 
-.botonCompra{
-    width: 30%;
+.nombreInsumo{
+    color: blueviolet;
+    margin: 10px 0;
 }
+
 /*/INSUMOS*/
 
 
@@ -337,3 +325,73 @@ h3{
 
 }
 /*/FOOTER*/
+
+@media (max-width: 768px) {
+    .contenedorPersona{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .imgPersona{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .contenedorPersona p{
+        font-size: medium;
+    }
+
+    .mainGaleria{
+        height: fit-content ;
+        grid-template-areas:
+        "titulo"
+        "bloque1"
+        "bloque2"
+        "bloque3"
+        ;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    
+    .mainServicios{
+        height: fit-content;
+    }
+    .contenedorServicios{
+        width: 95vw;
+    }
+    .imgServicios{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .imgServicios img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .mainInsumos{
+        height: fit-content;
+    }
+    .mainInsumos .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainInsumos .insumo{
+        width: 80%;
+        height: 50vh;
+    }
+    .mainInsumos .imgInsumos{
+        height: 50%;
+        width: auto;    
+    }
+
+    .mainConsejos{
+        height: fit-content;
+    }
+    .tarjetaConsejos{
+        width: 90%;
+        text-align: center;
+    }
+
+}

@@ -4,67 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRILLA BONITO NAILS || BY ANDRE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body>
+<body class="body">
 
-<!-- HEADER -->
-    <header class="header">
-        <h1>BRILLA BONITO NAILS</h1>
-        <img src="../assets/img/logo.jpg" class="logo" alt="logo">
-        <ul>
-            <li>
-                <a href="../index.html" class="enlacesHeader">HOME</a>
-            </li>
-
-            <li>
-                <a href="../pages/galeria.html" class="enlacesHeader">GALERIA</a>
-            </li>
-
-            <li>
-                <a href="../pages/insumos.html" class="enlacesHeader">INSUMOS</a>
-            </li>
-
-            <li>
-                <a href="../pages/servicios.html" class="enlacesHeader">SERVICIOS</a>
-            </li>
-
-            <li>
-                <a href="../pages/consejos.html" class="enlacesHeader">CONSEJOS</a>
-            </li>
-
-        </ul>
+<!--HEADER-->
+    <header class="headerSecundario">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../assets/img/logo.jpg" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/insumos.html">Insumos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/consejos.html">Consejos</a>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
     </header>
-<!-- /HEADER -->
+<!--/HEADER-->
 
 <!-- MAIN -->
-    <main class="main">
-       <h2>Diseños y Terminaciones</h2>
-       
-       <section class="contenedorGaleria">
-        <h3>Semipermanentes</h3>
-        <img src="../assets/img/semipermanentes/foto1.jfif" alt="uñas semipermanentes rosa">
-        <img src="../assets/img/semipermanentes/foto2.jfif" alt="uñas semipermanentes rosa y blanco">
-        <img src="../assets/img/semipermanentes/foto3.jfif" alt="uñas semipermanentes multicolor">
-        <img src="../assets/img/semipermanentes/foto4.jfif" alt="uñas semipermanentes amarillas">
-       </section>
+    <main class="mainGaleria">
+      <h2 class="tituloGaleria">Diseños y Terminaciones</h2>
+      
+      <section class="contenedorGaleria bloque1">
+          <div class="tituloCaja">
+            <h3>Semipermanentes</h3>
+          </div>
+          <div class="foto1">
+            <img src="../assets/img/semipermanentes/foto1.jfif" alt="uñas semipermanentes rosa">
+          </div>
+          <div class="foto2">
+            <img src="../assets/img/semipermanentes/foto2.jfif" alt="uñas semipermanentes rosa y blanco">
+          </div>
+          <div class="foto3">
+            <img src="../assets/img/semipermanentes/foto3.jfif" alt="uñas semipermanentes multicolor">
+          </div>
+          <div class="foto4">
+            <img src="../assets/img/semipermanentes/foto4.jfif" alt="uñas semipermanentes amarillas">
+          </div>
+      </section>
 
-       <section class="contenedorGaleria">
-        <h3>Esculpidas</h3>
-        <img src="../assets/img/esculpidas/foto1.jfif" alt="uñas esculpidas negras">
-        <img src="../assets/img/esculpidas/foto2.jfif" alt="uñas esculpidas bordo">
-        <img src="../assets/img/esculpidas/foto3.jfif" alt="uñas esculpidas verdes">
-        <img src="../assets/img/esculpidas/foto4.jfif" alt="uñas esculpidas violeta">
-       </section>
+      <section class="contenedorGaleria bloque2">
+          <div class="tituloCaja">
+            <h3>Esculpidas</h3>
+          </div>
+          <div class="foto1">
+            <img src="../assets/img/esculpidas/foto1.jfif" alt="uñas esculpidas negras">
+          </div>
+          <div class="foto2">
+            <img src="../assets/img/esculpidas/foto2.jfif" alt="uñas esculpidas bordo">
+          </div>
+          <div class="foto3">
+            <img src="../assets/img/esculpidas/foto3.jfif" alt="uñas esculpidas verdes">
+          </div>
+          <div class="foto4">
+            <img src="../assets/img/esculpidas/foto4.jfif" alt="uñas esculpidas violeta">
+          </div>
+      </section>
 
-       <section class="contenedorGaleria">
-        <h3>Kapping</h3>
-        <img src="../assets/img/kapping/foto1.jfif" alt="uñas kapping blancas">
-        <img src="../assets/img/kapping/foto2.jfif" alt="uñas kapping diseño">
-        <img src="../assets/img/kapping/foto3.jfif" alt="uñas kapping rosa">
-        <img src="../assets/img/kapping/foto4.jfif" alt="uñas kapping rojo">
+       <section class="contenedorGaleria bloque3">
+          <div class="tituloCaja">
+            <h3>Kapping</h3>
+          </div>
+          <div class="foto1">
+            <img src="../assets/img/kapping/foto1.jfif" alt="uñas kapping blancas">
+          </div>
+          <div class="foto2">
+            <img src="../assets/img/kapping/foto2.jfif" alt="uñas kapping diseño">
+          </div>
+          <div class="foto3">
+            <img src="../assets/img/kapping/foto3.jfif" alt="uñas kapping rosa">
+          </div>
+          <div class="foto4">
+            <img src="../assets/img/kapping/foto4.jfif" alt="uñas kapping rojo">
+          </div>
        </section>
 
     </main>
@@ -84,6 +117,8 @@
 
     </footer>
 <!-- /FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>

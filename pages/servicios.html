@@ -4,56 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRILLA BONITO NAILS || BY ANDRE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body>
+<body class="body">
 
-<!-- HEADER -->
-    <header class="header">
-        <h1>BRILLA BONITO NAILS</h1>
-        <img src="../assets/img/logo.jpg" class="logo" alt="logo">
-        <ul>
-            <li>
-                <a href="../index.html" class="enlacesHeader">HOME</a>
-            </li>
-
-            <li>
-                <a href="../pages/galeria.html" class="enlacesHeader">GALERIA</a>
-            </li>
-
-            <li>
-                <a href="../pages/insumos.html" class="enlacesHeader">INSUMOS</a>
-            </li>
-
-            <li>
-                <a href="../pages/servicios.html" class="enlacesHeader">SERVICIOS</a>
-            </li>
-
-            <li>
-                <a href="../pages/consejos.html" class="enlacesHeader">CONSEJOS</a>
-            </li>
-
-        </ul>
+<!--HEADER-->
+    <header class="headerSecundario">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../assets/img/logo.jpg" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/insumos.html">Insumos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/consejos.html">Consejos</a>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
     </header>
-<!-- /HEADER -->
+<!--/HEADER-->
 
 <!-- MAIN -->
-    <main class="main">
+    <main class="mainServicios">
         <h2>SERVICIOS Y SUS APLICACIONES</h2>
 
         <section class="contenedorServicios">
             <h3>Esmaltado Semipermanente</h3>
-            <img src="../assets/img/servicios/esmaltado_semipermanente.avif" class="imgServicios" alt="curación en cabina">
-            <img src="../assets/img/servicios/esmaltado_semipermanente2.jpg" class="imgServicios" alt="pintado de uñas">
+            <div class="imgServicios">
+              <img src="../assets/img/servicios/esmaltado_semipermanente.avif" alt="curación en cabina">
+              <img src="../assets/img/servicios/esmaltado_semipermanente2.jpg" alt="pintado de uñas">
+            </div>
+            
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo magni deserunt unde est vel ipsum aperiam totam? Incidunt aperiam iste neque in temporibus consequuntur exercitationem dicta iusto sequi at corporis quasi, soluta quod sint deserunt minima cumque molestias atque fugiat officiis, suscipit asperiores. Quos itaque ratione ullam porro praesentium!</p>
         </section>
 
         <section class="contenedorServicios">
             <h3>Kapping</h3>
-            <img src="../assets/img/servicios/kapping1.jfif" class="imgServicios" alt="">
-            <img src="../assets/img/servicios/kapping2.webp" class="imgServicios" alt="">
+            <div class="imgServicios">
+              <img src="../assets/img/servicios/kapping1.jfif" alt="">
+              <img src="../assets/img/servicios/kapping2.webp" alt="">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quam perferendis explicabo delectus fuga maiores. Ex repudiandae obcaecati corporis repellat magni nemo voluptate iste aliquam culpa eius, voluptatum incidunt provident officiis eligendi. Nesciunt odio sunt fugiat? Molestiae maxime similique, odit doloribus ex, cum, ea commodi autem nam sapiente dolorum obcaecati!</p>
         </section>
 
@@ -74,6 +83,8 @@
 
     </footer>
 <!-- /FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>

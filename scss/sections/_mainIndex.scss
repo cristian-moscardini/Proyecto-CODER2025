@@ -1,0 +1,45 @@
+.mainIndex{
+    background-color: rgba(137, 43, 226, 0.259);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tituloPrincipal{
+        display: flex;
+        flex-direction: column;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:rgba(157, 0, 255, 0.751);
+        font-style: italic;
+        width: 100%;
+        height: 100vh;
+        background-image:url(../img/fondo.jpg);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorPersona{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        background-color: rgba(215, 174, 253, 0.812);
+        height: 40vh;
+        padding: 20px;
+        margin: 20px 20px;
+
+        p{
+            color: blueviolet;
+            text-align: justify;
+            align-self: center;
+            padding: 15px 15px;
+            font-size: x-large;
+        }
+
+        .imgPersona{
+            width: 250px;
+            height: 250px;
+            align-self: center;
+            justify-self: center;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}

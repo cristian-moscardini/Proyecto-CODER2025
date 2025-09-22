@@ -1,0 +1,86 @@
+
+@media (max-width: 768px) {
+    .mainIndex{
+        .contenedorPersona{
+        grid-template-columns: 1fr;
+        height: auto;
+        }
+
+        .imgPersona{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        }
+
+        p{
+        font-size: medium;
+        }
+    }
+    
+    
+    .mainGaleria{
+        height: fit-content ;
+        grid-template-areas:
+        "titulo"
+        "bloque1"
+        "bloque2"
+        "bloque3"
+        ;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    
+    .mainServicios{
+        height: fit-content;
+
+        .contenedorServicios{
+            width: 95vw;
+
+            .imgServicios{
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+                text-align: center;
+
+                img{
+                    width: 80%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    
+    }
+
+    .mainInsumos{
+        height: fit-content;
+
+        .container{
+            .row{
+                flex-direction: column;
+                align-items: center;
+
+                .insumo{
+                    width: 80%;
+                    height: 50vh;
+
+                    .imgInsumos{
+                        height: 50%;
+                        width: auto;    
+                    }
+                }
+            }
+        }
+    }
+
+    .mainConsejos{
+        height: fit-content;
+
+        .tarjetaConsejos{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+
+}

@@ -1,0 +1,45 @@
+.mainInsumos{
+    background-color: brown;
+    background-image: url(../img/fondoInsumos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+
+    .contenedorInsumos{
+        height: 100%;
+
+        .row{
+            .insumo{
+                background-color: rgba(255, 255, 255, 0.705);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                height: 40vh;
+                margin: 20px;
+                text-align: center;
+
+                .imgInsumos{
+                    height: 50%;
+                    width: auto;
+                    justify-content: center;
+
+                    img{
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+
+                .row{
+                    .nombreInsumo{
+                        color: blueviolet;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

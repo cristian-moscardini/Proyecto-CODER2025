@@ -1,0 +1,13 @@
+@use 'general/general';
+
+@use 'components/headerIndex';
+@use 'components/headerSecundario';
+@use 'components/footer';
+
+@use 'sections/mainIndex';
+@use 'sections/galeria';
+@use 'sections/consejos';
+@use 'sections/servicios';
+@use 'sections/insumos';
+
+@use 'general/queries';

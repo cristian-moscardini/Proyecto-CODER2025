@@ -1,0 +1,21 @@
+.headerSecundario{
+    background-color: rgb(255, 230, 119);
+
+    .navbar {
+        .container-fluid{
+            flex-direction: column;
+
+            .navbar-brand{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .logo{
+                width: 40%;
+                border-radius: 5%;
+            }
+        }
+    }
+}

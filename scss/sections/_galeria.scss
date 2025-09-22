@@ -1,0 +1,81 @@
+.mainGaleria{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "bloque1 bloque2 bloque3"
+    ;
+    grid-template-columns: 4fr 4fr 4fr;
+    background-image: url(../img/fondoGaleria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    column-gap: 40px;
+    padding: 30px;
+
+    .tituloGaleria{
+        grid-area: titulo;
+        justify-self: center;
+    }
+
+    .contenedorGaleria{
+        display: grid;
+        grid-template-areas:
+        "tituloCaja tituloCaja"
+        "foto1 foto2"
+        "foto3 foto4"
+        ;
+        align-items: center;
+        justify-items: center;
+        border-radius: 20px;
+        padding: 30px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.705);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .tituloCaja{
+            grid-area: tituloCaja;
+
+            h3{
+                font-size: 100%;
+            }
+        }
+
+        .foto1{
+            grid-area: foto1;
+        }
+
+        .foto2{
+            grid-area: foto2;
+        }
+
+        .foto3{
+            grid-area: foto3;
+        }
+
+        .foto4{
+            grid-area: foto4;
+        }
+
+        img{
+            width: 80px;
+        }
+    }
+
+    .bloque1{
+        grid-area: bloque1;
+    }
+
+    .bloque2{
+        grid-area: bloque2;
+    }
+
+    .bloque3{
+        grid-area: bloque3;
+    }
+
+}
+

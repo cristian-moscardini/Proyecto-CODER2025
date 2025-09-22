@@ -1,397 +1,366 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /*HEADER*/
-.headerIndex{
-    position: absolute;
-    width: 100%;
+.headerIndex {
+  position: absolute;
+  width: 100%;
 }
 
-.headerSecundario{
-    background-color: rgb(255, 230, 119);   
+.headerSecundario {
+  background-color: rgb(255, 230, 119);
 }
 
-.logo{
-    width: 40%;
-    border-radius: 5%;
+.logo {
+  width: 40%;
+  border-radius: 5%;
 }
 
-.container-fluid{
-    flex-direction: column;
+.container-fluid {
+  flex-direction: column;
 }
 
-.navbar-brand{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 /*/HEADER*/
-
-
 /*MAIN*/
-.mainIndex{
-    background-color: rgba(137, 43, 226, 0.259);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mainIndex {
+  background-color: rgba(137, 43, 226, 0.259);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tituloPrincipal{
-    display: flex;
-    flex-direction: column;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:rgba(157, 0, 255, 0.751);
-    font-style: italic;
-    width: 100%;
-    height: 100vh;
-    background-image:url(../img/fondo.jpg);
-    justify-content: center;
-    align-items: center;
+.tituloPrincipal {
+  display: flex;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(157, 0, 255, 0.751);
+  font-style: italic;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/fondo.jpg);
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.contenedorPersona{
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    background-color: rgba(215, 174, 253, 0.812);
-    height: 40vh;
-    padding: 20px;
-    margin: 20px 20px;
+.contenedorPersona {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  background-color: rgba(215, 174, 253, 0.812);
+  height: 40vh;
+  padding: 20px;
+  margin: 20px 20px;
 }
 
-.contenedorPersona p{
-    color: blueviolet;
-    text-align: justify;
-    align-self: center;
-    padding: 15px 15px;
-    font-size: x-large;
+.contenedorPersona p {
+  color: blueviolet;
+  text-align: justify;
+  align-self: center;
+  padding: 15px 15px;
+  font-size: x-large;
 }
 
-.imgPersona{
-    width: 250px;
-    height: 250px;
-    align-self: center;
-    justify-self: center;
-    border-radius: 50%;
-    object-fit: cover;
-        
+.imgPersona {
+  width: 250px;
+  height: 250px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-h3{
-    color: blueviolet;
+h3 {
+  color: blueviolet;
 }
+
 /*/MAIN*/
-
-
 /*GALERIA*/
-.mainGaleria{
-    display: grid;
-    grid-template-areas:
-    "titulo titulo titulo"
-    "bloque1 bloque2 bloque3"
-    ;
-    grid-template-columns: 4fr 4fr 4fr;
-    background-image: url(../img/fondoGaleria.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    justify-self: center;
-    column-gap: 40px;
-    padding: 30px;  
+.mainGaleria {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "bloque1 bloque2 bloque3";
+  grid-template-columns: 4fr 4fr 4fr;
+  background-image: url(../img/fondoGaleria.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  column-gap: 40px;
+  padding: 30px;
 }
 
-.tituloGaleria{
-    grid-area: titulo;
-    justify-self: center;
+.tituloGaleria {
+  grid-area: titulo;
+  justify-self: center;
 }
 
-.bloque1{
-    grid-area: bloque1;
+.bloque1 {
+  grid-area: bloque1;
 }
 
-.bloque2{
-    grid-area: bloque2;
+.bloque2 {
+  grid-area: bloque2;
 }
 
-.bloque3{
-    grid-area: bloque3;
+.bloque3 {
+  grid-area: bloque3;
 }
 
-.contenedorGaleria{
-    display: grid;
-    grid-template-areas:
-    "tituloCaja tituloCaja"
-    "foto1 foto2"
-    "foto3 foto4"
-    ;
-    align-items: center;
-    justify-items: center;
-    border-radius: 20px;
-    padding: 30px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.705);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contenedorGaleria {
+  display: grid;
+  grid-template-areas: "tituloCaja tituloCaja" "foto1 foto2" "foto3 foto4";
+  align-items: center;
+  justify-items: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.705);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contenedorGaleria h3{
-    font-size: 100%;
+.contenedorGaleria h3 {
+  font-size: 100%;
 }
 
-.tituloCaja{
-    grid-area: tituloCaja;
+.tituloCaja {
+  grid-area: tituloCaja;
 }
 
-.foto1{
-    grid-area: foto1;
+.foto1 {
+  grid-area: foto1;
 }
 
-.foto2{
-    grid-area: foto2;
+.foto2 {
+  grid-area: foto2;
 }
 
-.foto3{
-    grid-area: foto3;
+.foto3 {
+  grid-area: foto3;
 }
 
-.foto4{
-    grid-area: foto4;
+.foto4 {
+  grid-area: foto4;
 }
 
-.contenedorGaleria img{
-    width: 80px;
-    
+.contenedorGaleria img {
+  width: 80px;
 }
+
 /*/GALERIA*/
-
-
 /*INSUMOS*/
-.mainInsumos{
-    background-color: brown;
-    background-image: url(../img/fondoInsumos.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    height: 100%;
-
-}
-.contenedorInsumos{
-    height: 100%;
+.mainInsumos {
+  background-color: brown;
+  background-image: url(../img/fondoInsumos.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  height: 100%;
 }
 
-.contenedorInsumos .insumo{
-    background-color: rgba(255, 255, 255, 0.705);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    height: 40vh;
-    margin: 20px;
-    text-align: center;
+.contenedorInsumos {
+  height: 100%;
 }
 
-.imgInsumos{
-    height: 50%;
-    width: auto;
-    justify-content: center;
+.contenedorInsumos .insumo {
+  background-color: rgba(255, 255, 255, 0.705);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  height: 40vh;
+  margin: 20px;
+  text-align: center;
 }
 
-.imgInsumos img{
-    height: 100%;
-    width: auto;
+.imgInsumos {
+  height: 50%;
+  width: auto;
+  justify-content: center;
 }
 
-.nombreInsumo{
-    color: blueviolet;
-    margin: 10px 0;
+.imgInsumos img {
+  height: 100%;
+  width: auto;
+}
+
+.nombreInsumo {
+  color: blueviolet;
+  margin: 10px 0;
 }
 
 /*/INSUMOS*/
-
-
 /*SERVICIOS*/
-.mainServicios{
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/fondoServicios.jpg);
-    background-size: cover;
-    flex: 1;
-    align-items: center;
-    height: 100%;
+.mainServicios {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/fondoServicios.jpg);
+  background-size: cover;
+  flex: 1;
+  align-items: center;
+  height: 100%;
 }
 
-.contenedorServicios{
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    background-color: rgba(255, 255, 255, 0.705);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center;
+.contenedorServicios {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  background-color: rgba(255, 255, 255, 0.705);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
 }
 
-.contenedorServicios h3{
-    color: blueviolet;
-    margin: 20px 0;
-    text-align: center;
+.contenedorServicios h3 {
+  color: blueviolet;
+  margin: 20px 0;
+  text-align: center;
 }
 
-.imgServicios{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    height: 200px;
+.imgServicios {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 200px;
 }
 
-.imgServicios img{
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+.imgServicios img {
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*/SERVICIOS*/
-
 /* CONSEJOS */
-.mainConsejos{
-    background-image: url(../img/fondoConsejos.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    height: 100%;
+.mainConsejos {
+  background-image: url(../img/fondoConsejos.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  height: 100%;
 }
 
-.tarjetaConsejos{
-    background-color: rgba(255, 255, 255, 0.705);
-    width: 60%;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.tarjetaConsejos {
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 60%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.mainConsejos h2{
-    color: blueviolet;
-    margin: 20px 0;
-    text-align: center;
+.mainConsejos h2 {
+  color: blueviolet;
+  margin: 20px 0;
+  text-align: center;
 }
 
 /*/CONSEJOS  */
-
-
-
 /*FOOTER*/
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(255, 230, 119);
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 230, 119);
 }
 
-.footer ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.enlacesFooter{
-    height: 50px;
-    text-decoration: none;
-    margin: 0px 15px 0px 15px;
-
+.enlacesFooter {
+  height: 50px;
+  text-decoration: none;
+  margin: 0px 15px 0px 15px;
 }
+
 /*/FOOTER*/
-
 @media (max-width: 768px) {
-    .contenedorPersona{
-        grid-template-columns: 1fr;
-        height: auto;
-    }
-    .imgPersona{
-        width: 150px;
-        height: 150px;
-        margin-bottom: 20px;
-    }
-    .contenedorPersona p{
-        font-size: medium;
-    }
-
-    .mainGaleria{
-        height: fit-content ;
-        grid-template-areas:
-        "titulo"
-        "bloque1"
-        "bloque2"
-        "bloque3"
-        ;
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-    }
-    
-    .mainServicios{
-        height: fit-content;
-    }
-    .contenedorServicios{
-        width: 95vw;
-    }
-    .imgServicios{
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        text-align: center;
-    }
-    .imgServicios img{
-        width: 80%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .mainInsumos{
-        height: fit-content;
-    }
-    .mainInsumos .row{
-        flex-direction: column;
-        align-items: center;
-    }
-    .mainInsumos .insumo{
-        width: 80%;
-        height: 50vh;
-    }
-    .mainInsumos .imgInsumos{
-        height: 50%;
-        width: auto;    
-    }
-
-    .mainConsejos{
-        height: fit-content;
-    }
-    .tarjetaConsejos{
-        width: 90%;
-        text-align: center;
-    }
-
+  .contenedorPersona {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .imgPersona {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .contenedorPersona p {
+    font-size: medium;
+  }
+  .mainGaleria {
+    height: fit-content;
+    grid-template-areas: "titulo" "bloque1" "bloque2" "bloque3";
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .mainServicios {
+    height: fit-content;
+  }
+  .contenedorServicios {
+    width: 95vw;
+  }
+  .imgServicios {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .imgServicios img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .mainInsumos {
+    height: fit-content;
+  }
+  .mainInsumos .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainInsumos .insumo {
+    width: 80%;
+    height: 50vh;
+  }
+  .mainInsumos .imgInsumos {
+    height: 50%;
+    width: auto;
+  }
+  .mainConsejos {
+    height: fit-content;
+  }
+  .tarjetaConsejos {
+    width: 90%;
+    text-align: center;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

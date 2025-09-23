@@ -1,11 +1,11 @@
+@use '../utilities/extends';
+
 .mainInsumos{
     background-color: brown;
     background-image: url(../img/fondoInsumos.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    @extend %flex-center;
     flex: 1;
-    align-items: center;
     height: 100%;
 
     .contenedorInsumos{

@@ -19,6 +19,7 @@
     .tituloGaleria{
         grid-area: titulo;
         justify-self: center;
+        color: variables.$color-font-h2;
     }
 
     .contenedorGaleria{

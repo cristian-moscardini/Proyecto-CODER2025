@@ -9,42 +9,71 @@
   height: 100vh;
 }
 
-/*HEADER*/
 .headerIndex {
   position: absolute;
   width: 100%;
 }
-
-.headerSecundario {
-  background-color: rgb(255, 230, 119);
-}
-
-.logo {
-  width: 40%;
-  border-radius: 5%;
-}
-
-.container-fluid {
+.headerIndex .navbar .container-fluid {
   flex-direction: column;
 }
-
-.navbar-brand {
+.headerIndex .navbar .container-fluid .navbar-brand {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
+.headerIndex .navbar .container-fluid .logo {
+  width: 40%;
+  border-radius: 5%;
+}
 
-/*/HEADER*/
-/*MAIN*/
+.headerSecundario {
+  background-color: rgb(255, 230, 119);
+}
+.headerSecundario .navbar .container-fluid {
+  flex-direction: column;
+}
+.headerSecundario .navbar .container-fluid .navbar-brand {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.headerSecundario .navbar .container-fluid .logo {
+  width: 40%;
+  border-radius: 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 230, 119);
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer ul li .enlacesFooter {
+  height: 50px;
+  text-decoration: none;
+  margin: 0px 15px 0px 15px;
+}
+
 .mainIndex {
   background-color: rgba(137, 43, 226, 0.259);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.tituloPrincipal {
+.mainIndex .tituloPrincipal {
   display: flex;
   flex-direction: column;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -56,8 +85,7 @@
   justify-content: center;
   align-items: center;
 }
-
-.contenedorPersona {
+.mainIndex .contenedorPersona {
   display: grid;
   grid-template-columns: 2fr 4fr;
   background-color: rgba(215, 174, 253, 0.812);
@@ -65,30 +93,23 @@
   padding: 20px;
   margin: 20px 20px;
 }
-
-.contenedorPersona p {
+.mainIndex .contenedorPersona p {
   color: blueviolet;
   text-align: justify;
   align-self: center;
   padding: 15px 15px;
   font-size: x-large;
 }
-
-.imgPersona {
+.mainIndex .contenedorPersona .imgPersona {
   width: 250px;
   height: 250px;
   align-self: center;
   justify-self: center;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-h3 {
-  color: blueviolet;
-}
-
-/*/MAIN*/
-/*GALERIA*/
 .mainGaleria {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "bloque1 bloque2 bloque3";
@@ -101,28 +122,15 @@ h3 {
   justify-content: center;
   align-content: center;
   justify-self: center;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   padding: 30px;
 }
-
-.tituloGaleria {
+.mainGaleria .tituloGaleria {
   grid-area: titulo;
   justify-self: center;
 }
-
-.bloque1 {
-  grid-area: bloque1;
-}
-
-.bloque2 {
-  grid-area: bloque2;
-}
-
-.bloque3 {
-  grid-area: bloque3;
-}
-
-.contenedorGaleria {
+.mainGaleria .contenedorGaleria {
   display: grid;
   grid-template-areas: "tituloCaja tituloCaja" "foto1 foto2" "foto3 foto4";
   align-items: center;
@@ -133,40 +141,39 @@ h3 {
   background-color: rgba(255, 255, 255, 0.705);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.contenedorGaleria h3 {
-  font-size: 100%;
-}
-
-.tituloCaja {
+.mainGaleria .contenedorGaleria .tituloCaja {
   grid-area: tituloCaja;
 }
-
-.foto1 {
+.mainGaleria .contenedorGaleria .tituloCaja h3 {
+  font-size: 100%;
+}
+.mainGaleria .contenedorGaleria .foto1 {
   grid-area: foto1;
 }
-
-.foto2 {
+.mainGaleria .contenedorGaleria .foto2 {
   grid-area: foto2;
 }
-
-.foto3 {
+.mainGaleria .contenedorGaleria .foto3 {
   grid-area: foto3;
 }
-
-.foto4 {
+.mainGaleria .contenedorGaleria .foto4 {
   grid-area: foto4;
 }
-
-.contenedorGaleria img {
+.mainGaleria .contenedorGaleria img {
   width: 80px;
 }
+.mainGaleria .bloque1 {
+  grid-area: bloque1;
+}
+.mainGaleria .bloque2 {
+  grid-area: bloque2;
+}
+.mainGaleria .bloque3 {
+  grid-area: bloque3;
+}
 
-/*/GALERIA*/
-/*INSUMOS*/
-.mainInsumos {
-  background-color: brown;
-  background-image: url(../img/fondoInsumos.jpg);
+.mainConsejos {
+  background-image: url(../img/fondoConsejos.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -174,39 +181,20 @@ h3 {
   align-items: center;
   height: 100%;
 }
-
-.contenedorInsumos {
-  height: 100%;
-}
-
-.contenedorInsumos .insumo {
+.mainConsejos .tarjetaConsejos {
   background-color: rgba(255, 255, 255, 0.705);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  width: 60%;
   border-radius: 10px;
-  height: 40vh;
-  margin: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mainConsejos h2 {
+  color: blueviolet;
+  margin: 20px 0;
   text-align: center;
 }
 
-.imgInsumos {
-  height: 50%;
-  width: auto;
-  justify-content: center;
-}
-
-.imgInsumos img {
-  height: 100%;
-  width: auto;
-}
-
-.nombreInsumo {
-  color: blueviolet;
-  margin: 10px 0;
-}
-
-/*/INSUMOS*/
-/*SERVICIOS*/
 .mainServicios {
   display: flex;
   flex-direction: column;
@@ -216,8 +204,7 @@ h3 {
   align-items: center;
   height: 100%;
 }
-
-.contenedorServicios {
+.mainServicios .contenedorServicios {
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -228,30 +215,26 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-content: center;
 }
-
-.contenedorServicios h3 {
+.mainServicios .contenedorServicios h3 {
   color: blueviolet;
   margin: 20px 0;
   text-align: center;
 }
-
-.imgServicios {
+.mainServicios .contenedorServicios .imgServicios {
   display: flex;
   width: 100%;
   justify-content: space-around;
   height: 200px;
 }
-
-.imgServicios img {
+.mainServicios .contenedorServicios .imgServicios img {
   height: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*/SERVICIOS*/
-/* CONSEJOS */
-.mainConsejos {
-  background-image: url(../img/fondoConsejos.jpg);
+.mainInsumos {
+  background-color: brown;
+  background-image: url(../img/fondoInsumos.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -259,108 +242,92 @@ h3 {
   align-items: center;
   height: 100%;
 }
-
-.tarjetaConsejos {
-  background-color: rgba(255, 255, 255, 0.705);
-  width: 60%;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.mainInsumos .contenedorInsumos {
+  height: 100%;
 }
-
-.mainConsejos h2 {
-  color: blueviolet;
-  margin: 20px 0;
+.mainInsumos .contenedorInsumos .row .insumo {
+  background-color: rgba(255, 255, 255, 0.705);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  height: 40vh;
+  margin: 20px;
   text-align: center;
 }
-
-/*/CONSEJOS  */
-/*FOOTER*/
-.footer {
-  display: flex;
+.mainInsumos .contenedorInsumos .row .insumo .imgInsumos {
+  height: 50%;
+  width: auto;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10vh;
-  background-color: rgb(255, 230, 119);
+}
+.mainInsumos .contenedorInsumos .row .insumo .imgInsumos img {
+  height: 100%;
+  width: auto;
+}
+.mainInsumos .contenedorInsumos .row .insumo .row .nombreInsumo {
+  color: blueviolet;
+  margin: 10px 0;
 }
 
-.footer ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.enlacesFooter {
-  height: 50px;
-  text-decoration: none;
-  margin: 0px 15px 0px 15px;
-}
-
-/*/FOOTER*/
 @media (max-width: 768px) {
-  .contenedorPersona {
+  .mainIndex .contenedorPersona {
     grid-template-columns: 1fr;
     height: auto;
   }
-  .imgPersona {
+  .mainIndex .imgPersona {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
   }
-  .contenedorPersona p {
+  .mainIndex p {
     font-size: medium;
   }
   .mainGaleria {
+    height: -moz-fit-content;
     height: fit-content;
     grid-template-areas: "titulo" "bloque1" "bloque2" "bloque3";
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
   .mainServicios {
+    height: -moz-fit-content;
     height: fit-content;
   }
-  .contenedorServicios {
+  .mainServicios .contenedorServicios {
     width: 95vw;
   }
-  .imgServicios {
+  .mainServicios .contenedorServicios .imgServicios {
     flex-direction: column;
     height: auto;
     align-items: center;
     text-align: center;
   }
-  .imgServicios img {
+  .mainServicios .contenedorServicios .imgServicios img {
     width: 80%;
     height: auto;
     margin-bottom: 10px;
   }
   .mainInsumos {
+    height: -moz-fit-content;
     height: fit-content;
   }
-  .mainInsumos .row {
+  .mainInsumos .container .row {
     flex-direction: column;
     align-items: center;
   }
-  .mainInsumos .insumo {
+  .mainInsumos .container .row .insumo {
     width: 80%;
     height: 50vh;
   }
-  .mainInsumos .imgInsumos {
+  .mainInsumos .container .row .insumo .imgInsumos {
     height: 50%;
     width: auto;
   }
   .mainConsejos {
+    height: -moz-fit-content;
     height: fit-content;
   }
-  .tarjetaConsejos {
+  .mainConsejos .tarjetaConsejos {
     width: 90%;
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

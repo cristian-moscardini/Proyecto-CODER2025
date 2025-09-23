@@ -1,10 +1,11 @@
+@use '../utilities/extends';
+@use '../general/variables';
+
 .mainConsejos{
     background-image: url(../img/fondoConsejos.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    @extend %flex-center;
     flex: 1;
-    align-items: center;
     height: 100%;
 
     .tarjetaConsejos{
@@ -17,7 +18,7 @@
     }
 
     h2{
-        color: blueviolet;
+        color: variables.$color-font-h2;
         margin: 20px 0;
         text-align: center;
     }

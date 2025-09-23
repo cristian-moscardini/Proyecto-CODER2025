@@ -1,4 +1,7 @@
+@use '../utilities/extends';
+
 .mainServicios{
+    @extend %flex-center;
     display: flex;
     flex-direction: column;
     background-image: url(../img/fondoServicios.jpg);

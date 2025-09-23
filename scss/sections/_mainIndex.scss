@@ -1,12 +1,11 @@
+@use '../utilities/extends';
+
 .mainIndex{
     background-color: rgba(137, 43, 226, 0.259);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-center;
 
     .tituloPrincipal{
-        display: flex;
-        flex-direction: column;
+        @extend %flex-center;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color:rgba(157, 0, 255, 0.751);
         font-style: italic;
@@ -14,7 +13,6 @@
         height: 100vh;
         background-image:url(../img/fondo.jpg);
         justify-content: center;
-        align-items: center;
     }
 
     .contenedorPersona{

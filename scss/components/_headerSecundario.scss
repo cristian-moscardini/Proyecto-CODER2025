@@ -1,5 +1,7 @@
+@use 'general/variables';
+
 .headerSecundario{
-    background-color: rgb(255, 230, 119);
+    background-color: variables.$color-header;
 
     .navbar {
         .container-fluid{

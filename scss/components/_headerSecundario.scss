@@ -1,7 +1,7 @@
-@use 'general/variables';
+@use '../general/variables';
 
 .headerSecundario{
-    background-color: variables.$color-header;
+    background-color: variables.$color-principal;
 
     .navbar {
         .container-fluid{
@@ -17,6 +17,30 @@
             .logo{
                 width: 40%;
                 border-radius: 5%;
+            }
+
+            .navbar-collapse{
+                background-color: rgb(255, 224, 236);
+                border-radius: 4px;
+
+                .navbar-nav{
+                    .nav-item{
+                        z-index: 1;
+
+                        .nav-link{
+                            transition: transform 0.3s ease-in-out;
+                            justify-self: center;
+                            text-shadow: -2px 0px 27px rgba(209, 41, 41, 0.83);
+                            font-size: x-large;
+                            color: white;
+                            margin: 0 10px 0 10px;
+
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -6,7 +6,6 @@
 .body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .headerIndex {
@@ -26,9 +25,23 @@
   width: 40%;
   border-radius: 5%;
 }
+.headerIndex .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  z-index: 1;
+}
+.headerIndex .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  transition: transform 0.3s ease-in-out;
+  justify-self: center;
+  text-shadow: -2px 0px 27px rgba(209, 41, 41, 0.83);
+  font-size: x-large;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+.headerIndex .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.2);
+}
 
 .headerSecundario {
-  background-color: rgb(255, 230, 119);
+  background-color: rgb(255, 224, 236);
 }
 .headerSecundario .navbar .container-fluid {
   flex-direction: column;
@@ -43,14 +56,33 @@
   width: 40%;
   border-radius: 5%;
 }
+.headerSecundario .navbar .container-fluid .navbar-collapse {
+  background-color: rgb(255, 224, 236);
+  border-radius: 4px;
+}
+.headerSecundario .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  z-index: 1;
+}
+.headerSecundario .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  transition: transform 0.3s ease-in-out;
+  justify-self: center;
+  text-shadow: -2px 0px 27px rgba(209, 41, 41, 0.83);
+  font-size: x-large;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+.headerSecundario .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.2);
+}
 
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 10vh;
-  background-color: rgb(255, 230, 119);
+  background-color: rgb(255, 224, 236);
 }
 .footer ul {
   display: flex;
@@ -67,38 +99,63 @@
   margin: 0px 15px 0px 15px;
 }
 
-.mainIndex {
-  background-color: rgba(137, 43, 226, 0.259);
+.mainInsumos, .mainServicios, .mainConsejos, .mainGaleria .contenedorGaleria .foto1, .mainGaleria .contenedorGaleria .foto2, .mainGaleria .contenedorGaleria .foto3, .mainGaleria .contenedorGaleria .foto4, .mainGaleria .contenedorGaleria .foto5, .mainGaleria .contenedorGaleria .foto6, .mainGaleria .contenedorGaleria .foto7, .mainGaleria .contenedorGaleria .foto8, .mainIndex, .mainIndex .tituloPrincipal {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.mainInsumos, .mainServicios, .mainGaleria, .mainIndex {
+  background: #fff1f1;
+  background: radial-gradient(circle farthest-side at center center, #fff1f1 0%, rgba(255, 0, 68, 0.26) 90%);
+  background: -moz-radial-gradient(circle farthest-side at center center, #fff1f1 0%, rgba(255, 0, 68, 0.26) 90%);
+}
+
 .mainIndex .tituloPrincipal {
-  display: flex;
-  flex-direction: column;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: rgba(157, 0, 255, 0.751);
+  color: rgb(165, 100, 133);
   font-style: italic;
   width: 100%;
   height: 100vh;
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondoIndex.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
-  align-items: center;
+}
+.mainIndex .tituloPrincipal .tarjetaTitulo {
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 60px 80px;
+  border-radius: 19% 81% 70% 30%/30% 69% 31% 70%;
+  align-content: center;
+  align-self: flex-end;
+  margin-right: 7%;
+  position: relative;
+  top: 200px;
+}
+.mainIndex h2 {
+  color: rgb(165, 100, 133);
+  margin: 40px 0;
+  text-align: center;
 }
 .mainIndex .contenedorPersona {
   display: grid;
+  justify-self: center;
+  width: 80%;
   grid-template-columns: 2fr 4fr;
-  background-color: rgba(215, 174, 253, 0.812);
+  background-color: rgba(255, 255, 255, 0.705);
   height: 40vh;
   padding: 20px;
   margin: 20px 20px;
+  border-radius: 10px;
 }
 .mainIndex .contenedorPersona p {
-  color: blueviolet;
+  color: rgb(206, 156, 175);
   text-align: justify;
   align-self: center;
   padding: 15px 15px;
   font-size: x-large;
+  margin-right: 50px;
 }
 .mainIndex .contenedorPersona .imgPersona {
   width: 250px;
@@ -114,14 +171,8 @@
   display: grid;
   grid-template-areas: "titulo titulo titulo" "bloque1 bloque2 bloque3";
   grid-template-columns: 4fr 4fr 4fr;
-  background-image: url(../img/fondoGaleria.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
   width: 100%;
   justify-content: center;
-  align-content: center;
-  justify-self: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
   padding: 30px;
@@ -129,15 +180,18 @@
 .mainGaleria .tituloGaleria {
   grid-area: titulo;
   justify-self: center;
+  color: rgb(165, 100, 133);
 }
 .mainGaleria .contenedorGaleria {
   display: grid;
-  grid-template-areas: "tituloCaja tituloCaja" "foto1 foto2" "foto3 foto4";
+  grid-template-areas: "tituloCaja tituloCaja" "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8";
   align-items: center;
   justify-items: center;
   border-radius: 20px;
   padding: 30px;
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: rgba(255, 255, 255, 0.705);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -145,22 +199,47 @@
   grid-area: tituloCaja;
 }
 .mainGaleria .contenedorGaleria .tituloCaja h3 {
-  font-size: 100%;
+  color: rgb(206, 156, 175);
 }
 .mainGaleria .contenedorGaleria .foto1 {
   grid-area: foto1;
+  padding: 20px;
 }
 .mainGaleria .contenedorGaleria .foto2 {
   grid-area: foto2;
+  padding: 20px;
 }
 .mainGaleria .contenedorGaleria .foto3 {
   grid-area: foto3;
+  padding: 20px;
 }
 .mainGaleria .contenedorGaleria .foto4 {
   grid-area: foto4;
+  padding: 20px;
+}
+.mainGaleria .contenedorGaleria .foto5 {
+  grid-area: foto5;
+  padding: 20px;
+}
+.mainGaleria .contenedorGaleria .foto6 {
+  grid-area: foto6;
+  padding: 20px;
+}
+.mainGaleria .contenedorGaleria .foto7 {
+  grid-area: foto7;
+  padding: 20px;
+}
+.mainGaleria .contenedorGaleria .foto8 {
+  grid-area: foto8;
+  padding: 20px;
 }
 .mainGaleria .contenedorGaleria img {
-  width: 80px;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.mainGaleria .contenedorGaleria img:hover {
+  transform: scale(1.05);
 }
 .mainGaleria .bloque1 {
   grid-area: bloque1;
@@ -173,13 +252,11 @@
 }
 
 .mainConsejos {
-  background-image: url(../img/fondoConsejos.jpg);
+  background-image: url(../../assets/img/fondoConsejos.webp);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
   flex: 1;
-  align-items: center;
-  height: 100%;
 }
 .mainConsejos .tarjetaConsejos {
   background-color: rgba(255, 255, 255, 0.705);
@@ -189,8 +266,19 @@
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.mainConsejos .tarjetaConsejos p {
+  color: rgb(165, 100, 133);
+  text-align: justify;
+  font-size: large;
+  margin: 20px 40px;
+}
+.mainConsejos .tarjetaConsejos h3 {
+  color: rgb(165, 100, 133);
+  text-align: center;
+  margin: 20px 0;
+}
 .mainConsejos h2 {
-  color: blueviolet;
+  color: rgb(165, 100, 133);
   margin: 20px 0;
   text-align: center;
 }
@@ -198,11 +286,13 @@
 .mainServicios {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/fondoServicios.jpg);
-  background-size: cover;
   flex: 1;
   align-items: center;
   height: 100%;
+}
+.mainServicios h2 {
+  color: rgb(165, 100, 133);
+  margin-top: 20px;
 }
 .mainServicios .contenedorServicios {
   display: flex;
@@ -216,15 +306,22 @@
   justify-content: center;
 }
 .mainServicios .contenedorServicios h3 {
-  color: blueviolet;
+  color: rgb(165, 100, 133);
   margin: 20px 0;
   text-align: center;
+}
+.mainServicios .contenedorServicios p {
+  color: rgb(206, 156, 175);
+  text-align: justify;
+  font-size: large;
+  margin: 20px 40px;
 }
 .mainServicios .contenedorServicios .imgServicios {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 200px;
+  margin: 30px 0 30px 0;
 }
 .mainServicios .contenedorServicios .imgServicios img {
   height: 100%;
@@ -233,14 +330,13 @@
 }
 
 .mainInsumos {
-  background-color: brown;
-  background-image: url(../img/fondoInsumos.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
   flex: 1;
-  align-items: center;
   height: 100%;
+}
+.mainInsumos h2 {
+  color: rgb(165, 100, 133);
+  margin: 20px 0;
+  text-align: center;
 }
 .mainInsumos .contenedorInsumos {
   height: 100%;
@@ -250,9 +346,16 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 10px;
-  height: 40vh;
+  height: 50vh;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.mainInsumos .contenedorInsumos .row .insumo:hover {
+  transform: scale(1.05);
 }
 .mainInsumos .contenedorInsumos .row .insumo .imgInsumos {
   height: 50%;
@@ -263,23 +366,45 @@
   height: 100%;
   width: auto;
 }
+.mainInsumos .contenedorInsumos .row .insumo .botonCarrito {
+  border: none;
+  border-radius: 10px;
+}
+.mainInsumos .contenedorInsumos .row .insumo .botonCarrito img {
+  height: 50px;
+  width: auto;
+}
 .mainInsumos .contenedorInsumos .row .insumo .row .nombreInsumo {
-  color: blueviolet;
+  color: rgb(165, 100, 133);
+  margin: 10px 0;
+}
+.mainInsumos .contenedorInsumos .row .insumo .row p {
+  color: rgb(206, 156, 175);
+  text-align: center;
+  font-size: large;
   margin: 10px 0;
 }
 
 @media (max-width: 768px) {
+  .mainIndex .tituloPrincipal .tarjetaTitulo {
+    padding: 40px 60px;
+    top: 150px;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: auto;
+  }
   .mainIndex .contenedorPersona {
     grid-template-columns: 1fr;
     height: auto;
   }
-  .mainIndex .imgPersona {
+  .mainIndex .contenedorPersona p {
+    font-size: small;
+    margin: 0;
+  }
+  .mainIndex .contenedorPersona .imgPersona {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-  }
-  .mainIndex p {
-    font-size: medium;
   }
   .mainGaleria {
     height: -moz-fit-content;
@@ -329,5 +454,13 @@
   .mainConsejos .tarjetaConsejos {
     width: 90%;
     text-align: center;
+  }
+  .headerSecundario .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: large;
+    margin: 0 5px 0 5px;
+  }
+  .headerIndex .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: large;
+    margin: 0 5px 0 5px;
   }
 }/*# sourceMappingURL=style.css.map */

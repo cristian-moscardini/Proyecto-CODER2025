@@ -1,34 +1,61 @@
 @use '../utilities/extends';
+@use '../general/variables';
 
 .mainIndex{
-    background-color: rgba(137, 43, 226, 0.259);
+    @extend %color-fondo;
     @extend %flex-center;
 
     .tituloPrincipal{
         @extend %flex-center;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:rgba(157, 0, 255, 0.751);
+        color: variables.$color-font-h2;
         font-style: italic;
         width: 100%;
         height: 100vh;
-        background-image:url(../img/fondo.jpg);
+        background-image:url(../img/fondoIndex.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
         justify-content: center;
+
+        .tarjetaTitulo{
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.404);
+            padding: 60px 80px;
+            border-radius: 19% 81% 70% 30% / 30% 69% 31% 70% ;
+            align-content: center;
+            align-self: flex-end;
+            margin-right: 7%;
+            position: relative;
+            top: 200px;
+
+
+        }
+    }
+
+    h2{
+        color: variables.$color-font-h2;
+        margin: 40px 0;
+        text-align: center;
     }
 
     .contenedorPersona{
         display: grid;
+        justify-self: center;
+        width: 80%;
         grid-template-columns: 2fr 4fr;
-        background-color: rgba(215, 174, 253, 0.812);
+        background-color: rgba(255, 255, 255, 0.705);
         height: 40vh;
-        padding: 20px;
+        padding: 20px;  
         margin: 20px 20px;
+        border-radius: 10px;
 
         p{
-            color: blueviolet;
+            color: variables.$color-secundario;
             text-align: justify;
             align-self: center;
             padding: 15px 15px;
             font-size: x-large;
+            margin-right: 50px;
         }
 
         .imgPersona{

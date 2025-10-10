@@ -1,19 +1,30 @@
 
 @media (max-width: 768px) {
     .mainIndex{
+        .tituloPrincipal{
+            .tarjetaTitulo{
+                padding: 40px 60px;
+                top: 150px;
+                margin-right: 2%;
+                margin-left: 2%;
+                height: auto;
+            }
+        }
+
         .contenedorPersona{
-        grid-template-columns: 1fr;
-        height: auto;
-        }
+            grid-template-columns: 1fr;
+            height: auto;
 
-        .imgPersona{
-        width: 150px;
-        height: 150px;
-        margin-bottom: 20px;
-        }
+            p{
+                font-size: small;
+                margin: 0;
+            }
 
-        p{
-        font-size: medium;
+            .imgPersona{
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
         }
     }
     
@@ -79,6 +90,40 @@
         .tarjetaConsejos{
             width: 90%;
             text-align: center;
+        }
+    }
+
+    .headerSecundario{
+        .navbar{
+            .container-fluid{
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .nav-link{
+                                font-size: large;
+                                margin: 0 5px 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .headerIndex{
+        .navbar{
+            .container-fluid{
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .nav-link{
+                                font-size: large;
+                                margin: 0 5px 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

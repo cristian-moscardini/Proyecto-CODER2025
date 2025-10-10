@@ -1,12 +1,19 @@
 @use '../utilities/extends';
+@use '../general/variables';
+@use 'sass:map';
+@use '../utilities/maps';
 
 .mainInsumos{
-    background-color: brown;
-    background-image: url(../img/fondoInsumos.jpg);
-    background-size: cover;
+    @extend %color-fondo;
     @extend %flex-center;
     flex: 1;
     height: 100%;
+
+    h2{
+        color: map.get(maps.$colorTexto, oscuro);
+        margin: 20px 0;
+        text-align: center;
+    }
 
     .contenedorInsumos{
         height: 100%;
@@ -17,9 +24,17 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 padding: 20px;
                 border-radius: 10px;
-                height: 40vh;
+                height: 50vh;
                 margin: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 text-align: center;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
 
                 .imgInsumos{
                     height: 50%;
@@ -32,11 +47,32 @@
                     }
                 }
 
+                .botonCarrito{
+                    border: none;
+                    border-radius: 10px;
+
+                    img{
+                        height: 50px;
+                        width: auto;
+                    }
+                }
+
+
+
                 .row{
                     .nombreInsumo{
-                        color: blueviolet;
+                        color: map.get(maps.$colorTexto, oscuro);
+                        margin: 10px 0;    
+                    }
+
+                    p{
+                        color: map.get(maps.$colorTexto, intermedio);
+                        text-align: center;
+                        font-size: large;
                         margin: 10px 0;
                     }
+
+                    
                 }
             }
         }

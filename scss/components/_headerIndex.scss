@@ -1,3 +1,5 @@
+@use '../general/variables';
+
 .headerIndex{
     position: absolute;
     width: 100%;
@@ -16,6 +18,27 @@
             .logo{
                 width: 40%;
                 border-radius: 5%;
+            }
+
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        z-index: 1;
+
+                        .nav-link{
+                            transition: transform 0.3s ease-in-out;
+                            justify-self: center;
+                            text-shadow: -2px 0px 27px rgba(209, 41, 41, 0.83);
+                            font-size: x-large;
+                            color: white;
+                            margin: 0 10px 0 10px;
+
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

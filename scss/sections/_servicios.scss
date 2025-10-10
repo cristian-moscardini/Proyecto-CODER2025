@@ -1,14 +1,19 @@
 @use '../utilities/extends';
+@use '../general/variables';
 
 .mainServicios{
     @extend %flex-center;
     display: flex;
     flex-direction: column;
-    background-image: url(../img/fondoServicios.jpg);
-    background-size: cover;
+    @extend %color-fondo;
     flex: 1;
     align-items: center;
     height: 100%;
+
+    h2{
+        color: variables.$color-font-h2;
+        margin-top: 20px;   
+    }
 
     .contenedorServicios{
         display: flex;
@@ -22,16 +27,24 @@
         justify-content: center;
 
         h3{
-            color: blueviolet;
+            color: variables.$color-font-h2;
             margin: 20px 0;
             text-align: center;
+        }
+
+        p{
+            color: variables.$color-secundario;
+            text-align: justify;
+            font-size: large;
+            margin: 20px 40px;
         }
 
         .imgServicios{
             display: flex;
             width: 100%;
-            justify-content: space-around;
+            justify-content:space-evenly;
             height: 200px;
+            margin: 30px 0 30px 0;
 
             img{
                 height: 100%;

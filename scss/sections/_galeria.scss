@@ -1,25 +1,26 @@
+@use '../general/variables';
+@use '../utilities/extends';
+@use 'sass:map';
+@use '../utilities/maps';
+
 .mainGaleria{
+
     display: grid;
     grid-template-areas:
     "titulo titulo titulo"
     "bloque1 bloque2 bloque3"
     ;
     grid-template-columns: 4fr 4fr 4fr;
-    background-image: url(../img/fondoGaleria.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+    @extend %color-fondo;
     width: 100%;
     justify-content: center;
-    align-content: center;
-    justify-self: center;
     column-gap: 40px;
     padding: 30px;
 
     .tituloGaleria{
         grid-area: titulo;
         justify-self: center;
-        color: variables.$color-font-h2;
+        color: map.get(maps.$colorTexto, oscuro);
     }
 
     .contenedorGaleria{
@@ -28,12 +29,15 @@
         "tituloCaja tituloCaja"
         "foto1 foto2"
         "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto8"
         ;
         align-items: center;
         justify-items: center;
         border-radius: 20px;
         padding: 30px;
         width: 100%;
+        height: fit-content;
         background-color: rgba(255, 255, 255, 0.705);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -41,28 +45,66 @@
             grid-area: tituloCaja;
 
             h3{
-                font-size: 100%;
+                color: map.get(maps.$colorTexto, intermedio);
             }
         }
 
         .foto1{
             grid-area: foto1;
+            @extend %flex-center;
+            padding: 20px;
         }
 
         .foto2{
             grid-area: foto2;
+            @extend %flex-center;
+            padding: 20px;
         }
 
         .foto3{
             grid-area: foto3;
+            @extend %flex-center;
+            padding: 20px;
         }
 
         .foto4{
             grid-area: foto4;
+            @extend %flex-center;
+            padding: 20px;
+        }
+
+        .foto5{
+            grid-area: foto5;
+            @extend %flex-center;
+            padding: 20px;
+        }
+
+        .foto6{
+            grid-area: foto6;
+            @extend %flex-center;
+            padding: 20px;
+        }
+
+        .foto7{
+            grid-area: foto7;
+            @extend %flex-center;
+            padding: 20px;
+        }
+
+        .foto8{
+            grid-area: foto8;
+            @extend %flex-center;
+            padding: 20px;
         }
 
         img{
-            width: 80px;
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
 
